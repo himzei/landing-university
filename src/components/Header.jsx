@@ -17,7 +17,7 @@ export default function Header() {
               {menuItems.map((item, i) => (
                 <li
                   key={i}
-                  className="px-2 py-2 cursor-pointer hover:text-red-500 transition-all duration-300"
+                  className="px-2 py-2 cursor-pointer hover:text-red-500 transition-all duration-300 xs:hidden sm:hidden md:hidden lg:block"
                 >
                   {item.title}
                 </li>
