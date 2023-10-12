@@ -1,4 +1,3 @@
-import { Input } from "@material-tailwind/react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Section from "./components/Section";
@@ -7,8 +6,7 @@ import Consulting from "./components/Consulting";
 
 function App() {
   return (
-    <>
-      {/* 메뉴 */}
+    <div className="relative">
       <Header />
       {/* 메인 */}
       <SectionFull>
@@ -20,8 +18,8 @@ function App() {
         <Consulting />
       </div>
       {/* 푸터 */}
-      <Footer />5
-    </>
+      <Footer />
+    </div>
   );
 }
 
