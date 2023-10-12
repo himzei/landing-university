@@ -1,3 +1,4 @@
+import { Button } from "@material-tailwind/react";
 import LogoAsset from "../assets/LogoAsset";
 import { menuItems } from "../lib/menuItems";
 
@@ -22,9 +23,9 @@ export default function Header() {
                 </li>
               ))}
             </ul>
-            <div className="border px-4 py-2 bg-red-500 text-white rounded-md cursor-pointer shadow-sm hover:bg-red-600 hover:shadow-lg transition-all duration-300 text-lg">
-              상담신청하기
-            </div>
+            <Button color="red" size="sm" className="items-center">
+              <h2 className="text-lg">상담신청하기</h2>
+            </Button>
           </div>
         </div>
       </div>
