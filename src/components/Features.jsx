@@ -102,8 +102,8 @@ export default function Features() {
             <div className="absolute right-0">
               <TitleSection
                 section="feature"
-                mainTitle="과정특징"
-                subTitle="과정특징"
+                mainTitle="훈련비 무료"
+                subTitle="훈련수당 매월 316,000원"
               />
             </div>
           </div>
