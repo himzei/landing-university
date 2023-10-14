@@ -4,9 +4,9 @@ import { Button } from "@material-tailwind/react";
 import { BsPencilSquare } from "react-icons/bs";
 
 export default function MainSlide() {
-  const handleType = (count) => {
+  const handleType = () => {
     // access word count number
-    console.log(count);
+    // console.log(count);
   };
 
   const handleDone = () => {
