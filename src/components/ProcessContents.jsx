@@ -1,3 +1,6 @@
+import { Button } from "@material-tailwind/react";
+import ProcessApplication from "../assets/ProcessApplication";
+import ProcessCard from "../assets/ProcessCard";
 import ProcessConsulting from "../assets/ProcessConsulting";
 
 export default function ProcessContents() {
@@ -8,20 +11,23 @@ export default function ProcessContents() {
       description:
         "하단 문의 양식에 고객님의 정보를 남겨주세요. 정보를 확인 후 빠른시일내로 전문가가 연락드립니다.",
       imgUrl: <ProcessConsulting />,
+      buttonTitle: "상담신청하기",
     },
     {
       no: "02",
       title: "내일배움 카드 신청",
       description:
         "하단 문의 양식에 고객님의 정보를 남겨주세요. 정보를 확인 후 빠른시일내로 전문가가 연락드립니다.",
-      imgUrl: "#",
+      imgUrl: <ProcessCard />,
+      buttonTitle: "상담신청하기",
     },
     {
       no: "03",
       title: "지원신청서 및 개인정보동의서 제출",
       description:
         "하단 문의 양식에 고객님의 정보를 남겨주세요. 정보를 확인 후 빠른시일내로 전문가가 연락드립니다.",
-      imgUrl: "#",
+      imgUrl: <ProcessApplication />,
+      buttonTitle: "상담신청하기",
     },
   ];
   return (
@@ -30,9 +36,11 @@ export default function ProcessContents() {
       {processItems.map((item, i) => (
         <div
           key={i}
-          className="w-full h-[300px] border border-gray-300 rounded-[25px] flex justify-between px-12 py-16 bg-red-200 relative overflow-hidden"
+          className="w-full h-[300px] border border-gray-300 rounded-[25px] flex justify-between px-12 py-16 relative overflow-hidden group "
         >
-          <div className="absolute inset-0 w-full h-full">{item.imgUrl}</div>
+          <div className="absolute inset-0 w-full h-full group-hover:scale-125 transition-all duration-300">
+            {item.imgUrl}
+          </div>
           {/* 1 */}
           <div className="flex flex-col space-y-3 z-10 text-white">
             <div>
@@ -42,7 +50,14 @@ export default function ProcessContents() {
             <p>{item.description}</p>
           </div>
           {/* 2 */}
-          <div></div>
+          <div className="flex items-end z-10">
+            <Button
+              className="group-hover:bg-white group-hover:text-red-600"
+              color="red"
+            >
+              outlined
+            </Button>
+          </div>
         </div>
       ))}
     </div>
