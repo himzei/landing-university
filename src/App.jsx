@@ -3,16 +3,28 @@ import Header from "./components/Header";
 import Section from "./components/Section";
 import SectionFull from "./components/SectionFull";
 import Consulting from "./components/Consulting";
+import Poster from "./components/Poster";
+import MainSlide from "./components/MainSlide";
+import Features from "./components/Features";
+import SectionSeven from "./components/SectionSeven";
 
 function App() {
   return (
     <div className="relative">
       <Header />
+
       {/* 메인 */}
+      <SectionSeven>
+        <MainSlide />
+      </SectionSeven>
+      {/* 특징 */}
       <SectionFull>
-        <div className="font-thin text-2xl h-[550px]">hello</div>
+        <Features />
       </SectionFull>
-      <Section></Section>
+      {/* Poster */}
+      <Section>
+        <Poster />
+      </Section>
       {/* 상담신청하기 */}
       <div className="py-20">
         <Consulting />

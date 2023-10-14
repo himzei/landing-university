@@ -43,7 +43,7 @@ export default function Footer() {
         {/* 2 row */}
         <div className="w-full pt-4 flex flex-col space-y-1">
           <div className="flex mobile:flex-col tablet:flex-row tablet:space-x-4 mobile:gap-1 text-[#bdbdbd]">
-            <p className="">대구한의대학교 산학협력단</p>
+            <p className="">대구한의대학교 평생교육원</p>
             <p className="">ADDRESS. [38578] 경상북도 경산시 어봉지길 285-10</p>
             <p className="">TEL. 053-819-7804</p>
             <p className="">FAX. 053-819-1277</p>

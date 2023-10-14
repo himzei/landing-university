@@ -5,9 +5,9 @@ import MenuMobile from "./MenuMobile";
 
 export default function Header() {
   return (
-    <div className="w-full px-2 mobile:h-12 tablet:h-20 flex justify-between bg-white items-center">
+    <div className="w-full px-2 mobile:h-12 tablet:h-24 flex justify-between bg-white items-center">
       <div className="w-full flex justify-center  shadow-sm ">
-        <div className="max-w-5xl w-full px-2">
+        <div className="max-w-6xl w-full px-2">
           <div className="w-full h-full flex  tablet:justify-between items-center">
             {/* 로고 */}
             <div className="h-full ">
