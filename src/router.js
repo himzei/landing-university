@@ -1,6 +1,5 @@
-import { Outlet, createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
-import Leaflet from "./routes/Leaflet";
 
 const router = createBrowserRouter([
   {
