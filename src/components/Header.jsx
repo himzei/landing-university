@@ -2,15 +2,22 @@ import { Button } from "@material-tailwind/react";
 import LogoAsset from "../assets/LogoAsset";
 import { menuItems } from "../lib/menuItems";
 import MenuMobile from "./MenuMobile";
+import { HashLink } from "react-router-hash-link";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function Header() {
-  const onClickMenu = (e) => {
-    e.preventDefault();
-    const MemuData = e.target.hash;
-    console.log(MemuData);
-    const IdMatchedPage = document.querySelector(MemuData);
-    IdMatchedPage?.scrollIntoView({ behavior: "smooth" });
-  };
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location.hash]);
+
   return (
     <div className="w-full px-2 mobile:h-12 tablet:h-24 flex justify-between bg-white items-center">
       <div className="w-full flex justify-center  shadow-sm ">
@@ -24,26 +31,24 @@ export default function Header() {
             <div className="flex h-full items-center space-x-6">
               <ul className="flex space-x-4 text-lg">
                 {menuItems.map(({ title, idx }) => (
-                  <a
-                    onClick={onClickMenu}
+                  <li
                     key={idx}
-                    href="#consulting"
                     className="px-2 py-2 cursor-pointer hover:text-red-500 transition-all duration-300 mobile:hidden tablet:block"
                   >
                     {title}
-                  </a>
+                  </li>
                 ))}
               </ul>
 
-              <a
-                href="#consulting"
-                onClick={onClickMenu}
-                color="red"
-                size="sm"
-                className="items-center mobile:hidden tablet:block bg-red-500 text-white px-4 py-2  hover:bg-red-600 transition-all duration-300 rounded-lg"
-              >
-                상담신청하기
-              </a>
+              <HashLink smooth to="/#consulting">
+                <Button
+                  color="red"
+                  size="sm"
+                  className="items-center mobile:hidden tablet:block"
+                >
+                  <h2 className="text-lg">상담신청하기</h2>
+                </Button>
+              </HashLink>
             </div>
           </div>
         </div>
