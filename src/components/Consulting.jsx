@@ -19,7 +19,7 @@ export default function Consulting() {
   const { mutate } = useMutation(handleConsulting);
 
   const onValid = (data) => {
-    console.log(data);
+    mutate(data);
   };
 
   return (
