@@ -12,7 +12,7 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/leaflet",
+        path: "leaflet",
         element: <Leaflet />,
       },
     ],
