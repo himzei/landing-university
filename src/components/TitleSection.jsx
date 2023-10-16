@@ -2,6 +2,7 @@ export default function TitleSection({
   section,
   mainTitle,
   subTitle,
+  subTitle2,
   size,
   color,
 }) {
@@ -21,6 +22,7 @@ export default function TitleSection({
       >
         <p className="font-light">{mainTitle}</p>
         <p>{subTitle}</p>
+        <p>{subTitle2}</p>
       </div>
     </div>
   );
