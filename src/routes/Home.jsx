@@ -41,7 +41,7 @@ export default function Home() {
       </Section>
 
       {/* 상담신청하기 */}
-      <div className="py-20">
+      <div className="py-20" id="consulting">
         <Consulting />
       </div>
       {/* 푸터 */}

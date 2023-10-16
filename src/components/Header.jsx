@@ -4,6 +4,13 @@ import { menuItems } from "../lib/menuItems";
 import MenuMobile from "./MenuMobile";
 
 export default function Header() {
+  const onClickMenu = (e) => {
+    e.preventDefault();
+    const MemuData = e.target.hash;
+    console.log(MemuData);
+    const IdMatchedPage = document.querySelector(MemuData);
+    IdMatchedPage?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className="w-full px-2 mobile:h-12 tablet:h-24 flex justify-between bg-white items-center">
       <div className="w-full flex justify-center  shadow-sm ">
@@ -16,23 +23,27 @@ export default function Header() {
             {/* 메뉴 */}
             <div className="flex h-full items-center space-x-6">
               <ul className="flex space-x-4 text-lg">
-                {menuItems.map((item, i) => (
-                  <li
-                    key={i}
+                {menuItems.map(({ title, idx }) => (
+                  <a
+                    onClick={onClickMenu}
+                    key={idx}
+                    href="#consulting"
                     className="px-2 py-2 cursor-pointer hover:text-red-500 transition-all duration-300 mobile:hidden tablet:block"
                   >
-                    {item.title}
-                  </li>
+                    {title}
+                  </a>
                 ))}
               </ul>
 
-              <Button
+              <a
+                href="#consulting"
+                onClick={onClickMenu}
                 color="red"
                 size="sm"
-                className="items-center mobile:hidden tablet:block"
+                className="items-center mobile:hidden tablet:block bg-red-500 text-white px-4 py-2  hover:bg-red-600 transition-all duration-300 rounded-lg"
               >
-                <h2 className="text-lg">상담신청하기</h2>
-              </Button>
+                상담신청하기
+              </a>
             </div>
           </div>
         </div>

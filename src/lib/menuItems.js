@@ -1,18 +1,18 @@
 export const menuItems = [
   {
     title: "과정소개1",
-    url: "#",
+    idx: 0,
   },
   {
     title: "과정소개2",
-    url: "#",
+    idx: 1,
   },
   {
     title: "과정소개3",
-    url: "#",
+    idx: 2,
   },
   {
     title: "과정소개4",
-    url: "#",
+    idx: 3,
   },
 ];
