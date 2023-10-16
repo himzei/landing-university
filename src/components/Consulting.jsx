@@ -37,6 +37,7 @@ export default function Consulting() {
     onSuccess: (data) => {
       if (data.result === 0) {
         reset();
+        setPrivateCheck(false);
         return toast.success(data.message, {
           position: "top-center",
           autoClose: 3000,
