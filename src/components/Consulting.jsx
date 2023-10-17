@@ -290,6 +290,19 @@ export default function Consulting() {
                 <Option>응용 SW 엔지니어링 멀티 사무관리원 양성과정</Option>
                 <Option>기타</Option>
               </Select> */}
+
+              <Input
+                {...register("major")}
+                type="text"
+                color="red"
+                label="학과"
+              />
+              <Input
+                {...register("grade")}
+                type="text"
+                color="red"
+                label="학년"
+              />
               <Textarea
                 {...register("message", {
                   required: "문의사항을 입력해 주세요.",
