@@ -326,7 +326,7 @@ export default function Consulting() {
                   onClick={handlePrivateCheck}
                 >
                   <div className="w-5 h-5 border border-gray-400">
-                    {privateCheck && <GiCheckMark />}
+                    {privateCheck && <GiCheckMark color="red" />}
                   </div>
                   <p className="text-sm text-gray-700">
                     개인정보처리방침 동의합니다

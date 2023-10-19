@@ -1,6 +1,8 @@
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./routes/Home";
 import Leaflet from "./routes/Leaflet";
+import Curriculumn from "./routes/Curriculumn";
+import Proceed from "./routes/Proceed";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +16,14 @@ const router = createBrowserRouter([
       {
         path: "leaflet",
         element: <Leaflet />,
+      },
+      {
+        path: "curriculumn",
+        element: <Curriculumn />,
+      },
+      {
+        path: "proceed",
+        element: <Proceed />,
       },
     ],
   },
