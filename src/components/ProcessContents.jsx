@@ -11,15 +11,15 @@ export default function ProcessContents() {
       description:
         "하단 문의 양식에 고객님의 정보를 남겨주세요. 정보를 확인 후 빠른시일내로 전문가가 연락드립니다.",
       imgUrl: <ProcessConsulting />,
-      buttonTitle: "상담신청하기",
+      buttonTitle: "자세히보기",
     },
     {
       no: "02",
-      title: "내일배움 카드 신청",
+      title: "국민 내일배움 카드 신청",
       description:
         "하단 문의 양식에 고객님의 정보를 남겨주세요. 정보를 확인 후 빠른시일내로 전문가가 연락드립니다.",
       imgUrl: <ProcessCard />,
-      buttonTitle: "상담신청하기",
+      buttonTitle: "자세히보기",
     },
     {
       no: "03",
@@ -27,7 +27,7 @@ export default function ProcessContents() {
       description:
         "하단 문의 양식에 고객님의 정보를 남겨주세요. 정보를 확인 후 빠른시일내로 전문가가 연락드립니다.",
       imgUrl: <ProcessApplication />,
-      buttonTitle: "상담신청하기",
+      buttonTitle: "자세히보기",
     },
   ];
   return (
@@ -59,7 +59,7 @@ export default function ProcessContents() {
               className="group-hover:bg-white group-hover:text-red-600"
               color="red"
             >
-              outlined
+              {item.buttonTitle}
             </Button>
           </div>
         </div>

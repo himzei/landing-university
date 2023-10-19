@@ -7,7 +7,7 @@ export default function Features() {
   const itemLists1 = [
     {
       number: "01",
-      title: "훈련비 전액부료",
+      title: "훈련비 전액무료",
       description:
         "공장에서 찍어내는 마케팅은 그만! 중국 마케팅을 왜 한국첩체에만 하시나요?",
       imgUrl:

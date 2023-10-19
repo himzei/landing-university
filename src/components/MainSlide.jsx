@@ -2,6 +2,7 @@ import { Typewriter } from "react-simple-typewriter";
 import MainSlideBack from "../assets/jpg/main_slide_back.jpg";
 import { Button } from "@material-tailwind/react";
 import { BsPencilSquare } from "react-icons/bs";
+import { HashLink } from "react-router-hash-link";
 
 export default function MainSlide() {
   const handleType = () => {
@@ -52,17 +53,19 @@ export default function MainSlide() {
               <p>평생교육원과 함께 당신의 취업스펙을 성장시키세요.</p>
             </div>
             <div className="mobile:px-2 tablet:px-4 pt-8">
-              <Button
-                size="lg"
-                variant="gradient"
-                color="light-blue"
-                className="group relative flex items-center gap-3 overflow-hidden pr-[72px]"
-              >
-                상담신청하기
-                <span className="absolute right-0 grid h-full w-12 place-items-center bg-light-blue-600 transition-colors group-hover:bg-light-blue-700">
-                  <BsPencilSquare size="20" />
-                </span>
-              </Button>
+              <HashLink smooth to="/#consulting">
+                <Button
+                  size="lg"
+                  variant="gradient"
+                  color="light-blue"
+                  className="group relative flex items-center gap-3 overflow-hidden pr-[72px]"
+                >
+                  상담신청하기
+                  <span className="absolute right-0 grid h-full w-12 place-items-center bg-light-blue-600 transition-colors group-hover:bg-light-blue-700">
+                    <BsPencilSquare size="20" />
+                  </span>
+                </Button>
+              </HashLink>
             </div>
           </div>
         </div>
