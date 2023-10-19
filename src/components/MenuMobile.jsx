@@ -9,6 +9,8 @@ import {
 import React from "react";
 import { AiOutlineMenuFold } from "react-icons/ai";
 import { menuItems } from "../lib/menuItems";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export default function MenuMobile() {
   const [openRight, setOpenRight] = React.useState(false);
@@ -54,14 +56,16 @@ export default function MenuMobile() {
         </div>
         <Menu>
           {menuItems.map((item, i) => (
-            <div key={i}>
+            <Link to={item.link} key={i}>
               <MenuItem>{item.title}</MenuItem>
-            </div>
+            </Link>
           ))}
           <hr className="my-3" />
-          <Button color="red" size="sm" className="items-center ">
-            <h2 className="">상담신청하기</h2>
-          </Button>
+          <HashLink to="/#consulting">
+            <Button color="red" size="sm" className="items-center ">
+              <h2 className="">상담신청하기</h2>
+            </Button>
+          </HashLink>
         </Menu>
       </Drawer>
     </React.Fragment>
