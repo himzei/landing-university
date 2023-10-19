@@ -13,7 +13,7 @@ export default function Poster() {
         size="lg"
       />
       {/* 본문 */}
-      <div className="grid grid-cols-2">
+      <div className="grid mobile:grid-cols-1 space-y-8 tablet:grid-cols-2">
         {/* 1 */}
         <div className="flex flex-col space-y-8">
           {outlineContents.map((item, i) => (

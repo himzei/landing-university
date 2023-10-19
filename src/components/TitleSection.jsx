@@ -16,9 +16,9 @@ export default function TitleSection({
         {section}
       </h2>
       <div
-        className={`${size === "lg" ? "text-5xl" : "text-3xl"} ${
-          color === "white" && "text-white"
-        } font-bold leading-tight trackging-tight`}
+        className={`${
+          size === "lg" ? "mobile:text-3xl tablet:text-5xl" : "text-3xl"
+        } ${color === "white" && "text-white"} font-bold trackging-tight`}
       >
         <p className="font-light">{mainTitle}</p>
         <p>{subTitle}</p>

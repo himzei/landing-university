@@ -16,11 +16,11 @@ export default function Footer() {
         {/* 1 row */}
         <div className="w-full flex justify-between border-b-[0.5px] border-gray-600 pb-4">
           {/* 로고와 메뉴 */}
-          <div className="flex flex-col items-center space-y-4">
+          <div className="flex items-center gap-4">
             <div>
               <LogoFootAsset />
             </div>
-            <ul className="mobile:hidden tablet:block flex gap-2">
+            <ul className="gap-2 mobile:hidden  tablet:flex">
               <li className="cursor-pointer text-white">개인정보처리방침</li>
               <li className="cursor-pointer text-[#bdbdbd]">이용약관</li>
               <li className="cursor-pointer text-[#bdbdbd]">

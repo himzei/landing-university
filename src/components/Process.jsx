@@ -15,7 +15,7 @@ export default function Process() {
     >
       <div className="bg-black/50 absolute inset-0 py-32">
         <Section>
-          <div className="flex flex-col">
+          <div className="flex flex-col px-2">
             {/* 타이틀 */}
             <TitleSection
               section="Process"

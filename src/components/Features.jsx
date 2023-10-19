@@ -55,7 +55,7 @@ export default function Features() {
     },
   ];
   return (
-    <div className="w-full py-32  relative">
+    <div className="w-full mobile:pt-64 mobile:pb-32 tablet:py-32  relative">
       <div
         style={{
           background: `url(${CityImg})`,
@@ -68,10 +68,8 @@ export default function Features() {
       </div>
       <Section>
         <div className="w-full flex flex-col space-y-16 px-2">
-          {/* 타이틀 */}
-
           {/* 본문1 */}
-          <div className="w-full flex gap-8 relative">
+          <div className="w-full flex mobile:flex-col tablet:flex-row gap-8 relative">
             {itemLists1.map((item, i) => (
               <div
                 key={i}
@@ -99,7 +97,7 @@ export default function Features() {
                 </div>
               </div>
             ))}
-            <div className="absolute right-0">
+            <div className="absolute  tablet:right-0 mobile:-top-40 tablet:top-0   ">
               <TitleSection
                 section="feature"
                 mainTitle="훈련비 무료"
@@ -109,7 +107,7 @@ export default function Features() {
           </div>
 
           {/* 본문2 */}
-          <div className="w-full flex justify-end gap-8">
+          <div className="w-full flex mobile:flex-col tablet:flex-row justify-end gap-8">
             {itemLists2.map((item, i) => (
               <div
                 key={i}
