@@ -50,7 +50,7 @@ export default function Footer() {
           </div>
           <div className="text-[#646669] text-sm py-1">
             <p>
-              Copylight 2023. 대구한의대학교 산학협력단. All rights reserved.
+              Copylight 2023. 대구한의대학교 평생교육원. All rights reserved.
             </p>
           </div>
         </div>
