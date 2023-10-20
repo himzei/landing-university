@@ -309,10 +309,6 @@ export default function Consulting() {
               <Textarea
                 {...register("message", {
                   required: "문의사항을 입력해 주세요.",
-                  minLength: {
-                    value: 5,
-                    message: "문의내용은 5글자 이상 입력해 주세요.",
-                  },
                 })}
                 color="red"
                 label="문의내용"
