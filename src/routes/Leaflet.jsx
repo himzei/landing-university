@@ -1,5 +1,6 @@
 import InfoImg from "../assets/jpg/info.jpg";
 import PosterImg from "../assets/jpg/poster.jpg";
+import PosterImg2 from "../assets/png/poster2.png";
 
 export default function Leaflet() {
   return (
@@ -67,6 +68,15 @@ export default function Leaflet() {
           <img
             className="w-full h-full object-cover"
             src={PosterImg}
+            alt="poster"
+          />
+        </div>
+
+        {/* 4 */}
+        <div className="w-full h-full">
+          <img
+            className="w-full h-full object-cover"
+            src={PosterImg2}
             alt="poster"
           />
         </div>
