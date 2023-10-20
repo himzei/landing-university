@@ -8,7 +8,7 @@ export default function ProcessConsulting() {
         src={ProcessConsultingImg}
         alt="process-consulting"
       />
-      <div className="bg-black/70 absolute inset-0 w-full h-full" />
+      <div className="bg-black/70 group-hover:bg-black/40 transition-all duration-300 absolute inset-0 w-full h-full" />
     </div>
   );
 }
