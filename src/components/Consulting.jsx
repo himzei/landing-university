@@ -84,7 +84,10 @@ export default function Consulting() {
       {/* 다이얼로그 */}
       <Dialog open={open} handler={handleOpen}>
         <DialogHeader>개인정보처리방침</DialogHeader>
-        <DialogBody divider className="h-[40rem] overflow-scroll">
+        <DialogBody
+          divider
+          className="mobile:h-[30rem] tablet:h-[40rem] overflow-scroll"
+        >
           <Typography className="font-normal">
             대구한의대학교 평생교육원(이하 교육원)은 고객님의 개인정보를
             중요시하며, 정보통신망 이용촉진 및 정보보호 에 관한 법률을 준수하고
