@@ -2,6 +2,9 @@ import { AiOutlinePlus } from "react-icons/ai";
 import TitleSection from "./TitleSection";
 import Section from "./Section";
 import CityImg from "../assets/jpg/city.jpg";
+import FeatureImg3 from "../assets/jpg/application.jpg";
+import FeatureImg4 from "../assets/jpg/accounting.jpg";
+import FeatureImg5 from "../assets/jpg/bigdata.jpg";
 
 export default function Features() {
   const itemLists1 = [
@@ -9,7 +12,7 @@ export default function Features() {
       number: "01",
       title: "훈련비 전액무료",
       description:
-        "공장에서 찍어내는 마케팅은 그만! 중국 마케팅을 왜 한국첩체에만 하시나요?",
+        "교육훈련비 100% 국비지원(출석률에 따라 교육훈련수당 차등지급)",
       imgUrl:
         "https://images.unsplash.com/photo-1586595847028-8f459a1e58a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3564&q=80",
       link: "#",
@@ -17,8 +20,7 @@ export default function Features() {
     {
       number: "02",
       title: "훈련수당",
-      description:
-        "공장에서 찍어내는 마케팅은 그만! 중국 마케팅을 왜 한국첩체에만 하시나요?",
+      description: "국민취업지원제도(4학년) 500,000원 + 훈련수당 316,000원",
       imgUrl:
         "https://images.unsplash.com/photo-1502085671122-2d218cd434e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3626&q=80",
       link: "#",
@@ -31,8 +33,7 @@ export default function Features() {
       title: "SW 엔지니어링",
       description:
         "공장에서 찍어내는 마케팅은 그만! 중국 마케팅을 왜 한국첩체에만 하시나요?",
-      imgUrl:
-        "https://images.unsplash.com/photo-1682687982468-4584ff11f88a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3570&q=80",
+      imgUrl: FeatureImg3,
       link: "#",
     },
     {
@@ -40,8 +41,7 @@ export default function Features() {
       title: "전산세무회계",
       description:
         "공장에서 찍어내는 마케팅은 그만! 중국 마케팅을 왜 한국첩체에만 하시나요?",
-      imgUrl:
-        "https://images.unsplash.com/photo-1682686581218-82326951f4ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3570&q=80",
+      imgUrl: FeatureImg4,
       link: "#",
     },
     {
@@ -49,8 +49,7 @@ export default function Features() {
       title: "빅데이터분석",
       description:
         "공장에서 찍어내는 마케팅은 그만! 중국 마케팅을 왜 한국첩체에만 하시나요?",
-      imgUrl:
-        "https://images.unsplash.com/photo-1697082390841-bbe568972ac8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3571&q=80",
+      imgUrl: FeatureImg5,
       link: "#",
     },
   ];

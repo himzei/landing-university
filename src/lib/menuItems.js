@@ -5,13 +5,18 @@ export const menuItems = [
     link: "/",
   },
   {
-    title: "과정안내",
+    title: "혜택",
     idx: 1,
+    link: "/benefit",
+  },
+  {
+    title: "과정안내",
+    idx: 2,
     link: "/curriculumn",
   },
   {
     title: "진행절차",
-    idx: 2,
+    idx: 3,
     link: "/proceed",
   },
 ];

@@ -3,6 +3,7 @@ import Home from "./routes/Home";
 import Leaflet from "./routes/Leaflet";
 import Curriculumn from "./routes/Curriculumn";
 import Proceed from "./routes/Proceed";
+import Benefit from "./routes/Benefit";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "proceed",
         element: <Proceed />,
+      },
+      {
+        path: "benefit",
+        element: <Benefit />,
       },
     ],
   },
