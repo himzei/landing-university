@@ -1,8 +1,4 @@
-import BackForth from "../assets/BackForth";
-import BackThree from "../assets/BackThree";
 import ProcessApplication from "../assets/ProcessApplication";
-import ProcessCard from "../assets/ProcessCard";
-import ProcessConsulting from "../assets/ProcessConsulting";
 import ButtonStep from "./ButtonStep";
 
 import ProcessTitle from "./ProcessTitle";
