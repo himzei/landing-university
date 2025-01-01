@@ -1,4 +1,4 @@
-import PosterImg from "../assets/jpg/poster.jpg";
+import PosterImg from "../assets/jpg/poster2.jpg";
 import { outlineContents } from "../lib/outlineContents";
 import TitleSection from "./TitleSection";
 

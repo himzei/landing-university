@@ -221,7 +221,7 @@ export default function Consulting() {
           <div className="space-y-4">
             <TitleSection
               section="consulting"
-              mainTitle="사무관리원 양성과정 A to Z"
+              mainTitle="호주 일경험 프로그램 A to Z"
               subTitle="대구한의대학교 평생교육원에"
               subTitle2="문의주세요"
             />

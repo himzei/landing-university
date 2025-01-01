@@ -19,7 +19,7 @@ export default function Process() {
             {/* 타이틀 */}
             <TitleSection
               section="Process"
-              mainTitle="멀티 사무관리원 양성과정  "
+              mainTitle="2025 호주 해외일경험 프로그램"
               subTitle="등록절차와 관련서류를 알려드립니다"
               size="lg"
               color="white"

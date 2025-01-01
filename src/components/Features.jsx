@@ -10,19 +10,20 @@ export default function Features() {
   const itemLists1 = [
     {
       number: "01",
-      title: "훈련비 전액무료",
+      title: "350~900만원 지원",
       description:
-        "교육훈련비 100% 국비지원(출석률에 따라 교육훈련수당 차등지급)",
+        "참여 청년들에게 월 150만 원의 체재비와 최대 900만 원의 준비금 지원! 해외에서의 새로운 도전에 몰입할 수 있습니다",
       imgUrl:
-        "https://images.unsplash.com/photo-1586595847028-8f459a1e58a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3564&q=80",
+        "https://plus.unsplash.com/premium_photo-1697730221799-f2aa87ab2c5d?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       link: "#",
     },
     {
       number: "02",
-      title: "훈련수당",
-      description: "국민취업지원제도(4학년) 500,000원 + 훈련수당 316,000원",
+      title: "호주현지 일경험(2개월)",
+      description:
+        "호주에서 제공되는 다양한 직무 기회! 미용, 화장품 분야에서의 자신만의 글로벌 스토리를 만들어 보세요",
       imgUrl:
-        "https://images.unsplash.com/photo-1502085671122-2d218cd434e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3626&q=80",
+        "https://images.unsplash.com/photo-1546665291-dbef6ab58991?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       link: "#",
     },
   ];
@@ -30,25 +31,25 @@ export default function Features() {
   const itemLists2 = [
     {
       number: "03",
-      title: "SW 엔지니어링",
+      title: "글로벌 경험의 첫걸음",
       description:
-        "공장에서 찍어내는 마케팅은 그만! 중국 마케팅을 왜 한국첩체에만 하시나요?",
+        "해외 기업 및 국제기구에서의 실무 경험을 통해 글로벌 직무 역량을 키울 수 있는 기회!",
       imgUrl: FeatureImg3,
       link: "#",
     },
     {
       number: "04",
-      title: "전산세무회계",
+      title: "휴학 없이 글로벌 경험",
       description:
-        "공장에서 찍어내는 마케팅은 그만! 중국 마케팅을 왜 한국첩체에만 하시나요?",
+        "대학생이라면 누구나 학업을 중단하지 않고 해외에서 직무 경험을 쌓을 수 있는 절호의 기회",
       imgUrl: FeatureImg4,
       link: "#",
     },
     {
       number: "05",
-      title: "빅데이터분석",
+      title: "사전교육과 사후관리",
       description:
-        "공장에서 찍어내는 마케팅은 그만! 중국 마케팅을 왜 한국첩체에만 하시나요?",
+        "해외 생활에 필요한 언어 및 직무교육부터 귀국 후 진로 설계까지, 철저히 준비된 프로그램으로 성공적인 해외 경험을 보장",
       imgUrl: FeatureImg5,
       link: "#",
     },
@@ -99,8 +100,8 @@ export default function Features() {
             <div className="absolute  tablet:right-0 mobile:-top-40 tablet:top-0   ">
               <TitleSection
                 section="feature"
-                mainTitle="훈련비 무료"
-                subTitle="훈련수당 매월 316,000원"
+                mainTitle="해외 일경험 지원사업(WELL)"
+                subTitle="학업과 경력을 동시에 잡으세요!"
               />
             </div>
           </div>
