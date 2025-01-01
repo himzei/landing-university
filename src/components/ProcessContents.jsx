@@ -1,4 +1,5 @@
 import ProcessApplication from "../assets/ProcessApplication";
+import ProcessConsulting from "../assets/ProcessConsulting";
 import ButtonStep from "./ButtonStep";
 
 import ProcessTitle from "./ProcessTitle";
