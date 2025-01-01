@@ -1,5 +1,5 @@
 import { Typewriter } from "react-simple-typewriter";
-import MainSlideBack from "../assets/jpg/main_slide_back.jpg";
+import MainSlideBack from "../assets/png/main.png";
 import ButtonConsulting from "./ButtonConsulting";
 
 export default function MainSlide() {
